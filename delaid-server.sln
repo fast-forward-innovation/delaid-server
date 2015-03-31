@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "delaid-server", "delaid-server\delaid-server.csproj", "{01A6CD13-EEE3-4178-B88F-B48F1D07D0F1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "delaid_server", "delaid-server\delaid_server.csproj", "{1D869ECE-953F-4C10-A927-38CEDAE3022E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "delaid_server.Tests", "delaid_server.Tests\delaid_server.Tests.csproj", "{FF0D8120-5726-4B03-AA30-7A2EA742C7D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{01A6CD13-EEE3-4178-B88F-B48F1D07D0F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{01A6CD13-EEE3-4178-B88F-B48F1D07D0F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{01A6CD13-EEE3-4178-B88F-B48F1D07D0F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{01A6CD13-EEE3-4178-B88F-B48F1D07D0F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D869ECE-953F-4C10-A927-38CEDAE3022E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D869ECE-953F-4C10-A927-38CEDAE3022E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D869ECE-953F-4C10-A927-38CEDAE3022E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D869ECE-953F-4C10-A927-38CEDAE3022E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF0D8120-5726-4B03-AA30-7A2EA742C7D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF0D8120-5726-4B03-AA30-7A2EA742C7D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF0D8120-5726-4B03-AA30-7A2EA742C7D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF0D8120-5726-4B03-AA30-7A2EA742C7D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -89,7 +89,7 @@ namespace delaid_GTFS
 		/// and Far Rockaway-Mott Avenue, Queens at all times. Also from about 6AM until about 
 		/// midnight, additional A trains operate between Inwood-207 St and Lefferts Boulevard 
 		/// (trains typically alternate between Lefferts Blvd and Far Rockaway)."
-		/// </remarks>
+		/// </description>
 		public string RouteDesc {
 			get;
 			set;

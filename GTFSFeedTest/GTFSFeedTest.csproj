@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{57817774-61B9-45B9-BBE1-5805EC117337}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <RootNamespace>delaid_GTFS</RootNamespace>
-    <AssemblyName>delaid_GTFS</AssemblyName>
+    <ProjectGuid>{C4C532AF-8EC8-44FC-AF7C-2F3847AF2720}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>GTFSFeedTest</RootNamespace>
+    <AssemblyName>GTFSFeedTest</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -17,7 +17,7 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
+    <Externalconsole>true</Externalconsole>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -25,26 +25,20 @@
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
+    <Externalconsole>true</Externalconsole>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="CsvHelper">
-      <HintPath>..\packages\CsvHelper.2.11.1.1\lib\net40-client\CsvHelper.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="GTFSRoute.cs" />
-    <Compile Include="GTFSTrip.cs" />
-    <Compile Include="GTFSStop.cs" />
-    <Compile Include="GTFSStopTimes.cs" />
-    <Compile Include="GTFSFeed.cs" />
-    <Compile Include="GTFSCalendar.cs" />
-    <Compile Include="GTFSCalendarDates.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\delaid_GTFS\delaid_GTFS.csproj">
+      <Project>{57817774-61B9-45B9-BBE1-5805EC117337}</Project>
+      <Name>delaid_GTFS</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

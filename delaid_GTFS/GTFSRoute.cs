@@ -13,6 +13,10 @@ namespace delaid_GTFS
 	/// </summary>
 	public class GTFSRoute
 	{
+		public GTFSRoute()
+		{
+		}
+
 		/// <summary>
 		/// Initializes a new instance of the <see cref="delaid_GTFS.GTFSRoute"/> class.
 		/// </summary>

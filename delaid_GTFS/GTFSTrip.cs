@@ -2,6 +2,9 @@
 
 namespace delaid_GTFS
 {
+	/// <summary>
+	/// Trips for each route. A trip is a sequence of two or more stops that occurs at specific time.
+	/// </summary>
 	public class GTFSTrip
 	{
 		/// <summary>
@@ -19,7 +22,7 @@ namespace delaid_GTFS
 		/// The trip_id field contains an ID that identifies a trip. The trip_id is dataset unique.
 		/// </summary>
 		/// <value>The trip I.</value>
-		string TripID {
+		public string TripID {
 			get;
 			set;
 		}

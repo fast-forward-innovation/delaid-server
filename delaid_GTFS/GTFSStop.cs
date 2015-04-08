@@ -2,6 +2,9 @@
 
 namespace delaid_GTFS
 {
+	/// <summary>
+	/// Individual locations where vehicles pick up or drop off passengers.
+	/// </summary>
 	public class GTFSStop
 	{
 		/// <summary>

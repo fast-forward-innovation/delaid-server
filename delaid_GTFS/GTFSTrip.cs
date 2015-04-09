@@ -7,6 +7,10 @@ namespace delaid_GTFS
 	/// </summary>
 	public class GTFSTrip
 	{
+		public GTFSTrip()
+		{
+		}
+
 		/// <summary>
 		/// Initializes a new instance of the <see cref="delaid_GTFS.GTFSTrip"/> class.
 		/// </summary>
@@ -21,7 +25,7 @@ namespace delaid_GTFS
 		/// <summary>
 		/// The trip_id field contains an ID that identifies a trip. The trip_id is dataset unique.
 		/// </summary>
-		/// <value>The trip I.</value>
+		/// <value>The trip ID.</value>
 		public string TripID {
 			get;
 			set;
@@ -47,6 +51,15 @@ namespace delaid_GTFS
 		/// service day; it should not be used for destination names or limited/express designations.
 		/// </description>
 		public string ShortName {
+			get;
+			set;
+		}
+
+		/// <summary>
+		/// Gets or sets the service ID.
+		/// </summary>
+		/// <value>The service ID.</value>
+		public string ServiceID {
 			get;
 			set;
 		}

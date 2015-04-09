@@ -7,6 +7,10 @@ namespace delaid_GTFS
 	/// </summary>
 	public class GTFSStop
 	{
+		public GTFSStop()
+		{
+		}
+
 		/// <summary>
 		/// Initializes a new instance of the <see cref="delaid_GTFS.GTFSStop"/> class.
 		/// </summary>

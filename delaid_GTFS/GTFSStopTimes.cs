@@ -7,6 +7,10 @@ namespace delaid_GTFS
 	/// </summary>
 	public class GTFSStopTimes
 	{
+		public GTFSStopTimes ()
+		{
+		}
+
 		/// <summary>
 		/// Initializes a new instance of the <see cref="delaid_GTFS.GTFSStopTimes"/> class.
 		/// </summary>
@@ -20,16 +24,26 @@ namespace delaid_GTFS
 		/// Gets or sets the trip.
 		/// </summary>
 		/// <value>The trip.</value>
-		public GTFSTrip Trip {
-			get;
-			set;
-		}
+//		public GTFSTrip Trip {
+//			get;
+//			set;
+//		}
 
 		/// <summary>
 		/// Gets or sets the stop.
 		/// </summary>
 		/// <value>The stop.</value>
 		public GTFSStop Stop {
+			get;
+			set;
+		}
+
+		public string StopID {
+			get;
+			set;
+		}
+
+		public string TripID {
 			get;
 			set;
 		}

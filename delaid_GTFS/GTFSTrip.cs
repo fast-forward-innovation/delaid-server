@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace delaid_GTFS
 {
@@ -60,6 +61,15 @@ namespace delaid_GTFS
 		/// </summary>
 		/// <value>The service ID.</value>
 		public string ServiceID {
+			get;
+			set;
+		}
+
+		/// <summary>
+		/// Gets or sets the stop times.
+		/// </summary>
+		/// <value>The stop times.</value>
+		public List<GTFSStopTimes> StopTimes {
 			get;
 			set;
 		}

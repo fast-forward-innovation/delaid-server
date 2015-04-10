@@ -9,8 +9,13 @@ namespace GTFSFeedTest
 		{
 			string feedPath = "/Users/mike/Documents/mbta_playground/MBTA_GTFS/";
 
+			DateTime start = DateTime.Now;
+
 			var feed = new GTFSFeed ();
 			feed.ParseFeed (feedPath);
+
+			TimeSpan runTime = DateTime.Now - start;
+			Console.WriteLine ("Time to run: " + runTime.TotalSeconds + " s");
 
 			Console.WriteLine ("### Routes ###");
 			for (int i=20; i<30; i++) {
